@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>আমার Mini App</h1>
+        <div class="form-container">
+            <h2>লগইন করুন</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="ইউজার নাম" required>
+                <input type="password" id="login-password" placeholder="পাসওয়ার্ড" required>
+                <button type="submit">লগইন</button>
+            </form>
+            <p>নতুন ইউজার? <a href="#" onclick="toggleForms()">রেজিস্ট্রেশন করুন</a></p>
+        </div>
+        
+        <div class="form-container" id="registration" style="display:none;">
+            <h2>নতুন একাউন্ট তৈরি করুন</h2>
+            <form id="registration-form">
+                <input type="text" id="reg-username" placeholder="ইউজার নাম" required>
+                <input type="email" id="reg-email" placeholder="ইমেইল" required>
+                <input type="password" id="reg-password" placeholder="পাসওয়ার্ড" required>
+                <button type="submit">রেজিস্টার</button>
+            </form>
+            <p>অথবা <a href="#" onclick="toggleForms()">লগইন করুন</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
